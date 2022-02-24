@@ -41,3 +41,19 @@ body{
     background-color: var(--bgColorMenu);
     
 }
+.menu__item{
+    
+    all: unset;
+    flex-grow: 1;
+    z-index: 100;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    border-radius: 50%;
+    align-items: center;
+    will-change: transform;
+    justify-content: center;
+    padding: 0.55em 0 0.85em;
+    transition: transform var(--timeOut , var(--duration));
+    
+}
