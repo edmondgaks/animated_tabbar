@@ -70,3 +70,11 @@ body{
     transition: background-color var(--duration), transform var(--duration);
     
 }
+
+
+.menu__item.active::before{
+    
+    transform: scale(1);
+    background-color: var(--bgColorItem);
+
+}
