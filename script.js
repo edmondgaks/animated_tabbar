@@ -36,3 +36,16 @@ function offsetMenuBorder(element, menuBorder) {
     menuBorder.style.transform = `translate3d(${left}, 0 , 0)`;
 
 }
+
+offsetMenuBorder(activeItem, menuBorder);
+
+menuItems.forEach((item, index) => {
+
+    item.addEventListener("click", () => clickItem(item, index));
+    
+})
+
+window.addEventListener("resize", () => {
+    offsetMenuBorder(activeItem, menuBorder);
+    menu.style.setProperty("--timeOut", "none");
+});
